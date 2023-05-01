@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exemplu Design Patterns</title>
+	</head>
+	<link rel="stylesheet" href="main.css">
+	<body>
+		<h1>Exemplu Design Patterns</h1>
+
+		<!-- Design pattern-ul Adapter -->
+
+		<h2>Adapter Pattern</h2>
+
+		<p>Convertor valutar:</p>
+
+		<label for="amount-input">Cantitate:</label>
+		<input type="number" id="amount-input" />
+
+		<label for="currency-select">Moneda:</label>
+		<select id="currency-select">
+			<option value="USD">Dolar american (USD)</option>
+			<option value="EUR">Euro (EUR)</option>
+			<option value="GBP">Liră sterlină (GBP)</option>
+		</select>
+
+		<button id="convert-button">Converteste</button>
+
+		<p>Total:</p>
+
+		<p id="total-output">0</p>
+
+	
+<h2>Bridge Pattern</h2>
+
+<p>Generare de documente:</p>
+
+<label for="document-type-select">Tip document:</label>
+<select id="document-type-select">
+  <option value="PDF">PDF</option>
+  <option value="HTML">HTML</option>
+  <option value="XML">XML</option>
+</select>
+
+<p>Conținut:</p>
+
+<textarea id="document-content"></textarea>
+
+<p>Generat:</p>
+
+<textarea id="generated-document" readonly></textarea>
+	<!-- Design pattern-ul Composite -->
+
+	<h2>Composite Pattern</h2>
+
+	<p>Elemente de meniu:</p>
+
+	<ul id="menu">
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<li>
+			Element 3
+			<ul>
+				<li>Element 3.1</li>
+				<li>Element 3.2</li>
+			</ul>
+		</li>
+		<li>Element 4</li>
+		<li>
+			Element 5
+			<ul>
+				<li>Element 5.1</li>
+				<li>Element 5.2</li>
+				<li>Element 5.3</li>
+			</ul>
+		</li>
+	</ul>
+	<!-- Design pattern-ul Decorator -->
+
+	<h2>Decorator Pattern</h2>
+
+<p>Elemente de stil:</p>
+
+<ul>
+	<li>
+		<input type="checkbox" id="bold-checkbox">
+		<label for="bold-checkbox">Bold</label>
+	</li>
+	<li>
+		<input type="checkbox" id="italic-checkbox">
+		<label for="italic-checkbox">Italic</label>
+	</li>
+	<li>
+		<input type="checkbox" id="underline-checkbox">
+		<label for="underline-checkbox">Underline</label>
+	</li>
+</ul>
+
+<p>Text de decorat:</p>
+
+<textarea id="decorated-text"></textarea>
+
+<p>Rezultat:</p>
+
+<p id="decorated-result"></p>
+
+<script src="app.js"></script>
+</body>
+</html>
